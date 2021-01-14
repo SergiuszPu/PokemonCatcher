@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <title>Catch Pokemon</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="player-wrapper" id="player-wrapper">
+            <h2>Hello, text your nickname and start catching Pokemon</h2>
+            <input 
+            type='text' 
+            placeholder="nickname"
+            id="player-name"
+            required>
+            <button class="start-button" id="start-button" type="button" disabled>Continue</button>
+        </div>
+
+      <div class="hide game-wrapper" id="game-wrapper">
+        <h2 id="game-title" class="game-title"></h2>
+        <div id="pokeCardsContainer"></div>
+        <button id="catch-button">'Catch'em!'</button>
+      </div>
+
+      <div class="hide choise-wrapper" id="choise-wrapper">
+        <div id="choiseCardContainer"></div>
+      </div>
+
+    </div>
+    
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

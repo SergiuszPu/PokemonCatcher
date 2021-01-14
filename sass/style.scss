@@ -1,0 +1,194 @@
+$font: 'Ranchers', cursive;
+
+$color-body: rgb(150, 135, 135);
+$color-text: rgb(161, 46, 46);
+$color-shadow: rgb(231, 208, 79);
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: $color-body;
+    font-family: $font;
+}
+
+.container {
+    margin: auto;
+    margin-top: 100px;
+}
+
+.player-wrapper {
+    text-align: center;
+    margin-top: 250px;
+}
+
+.player-wrapper h2 {
+    color: rgb(44, 29, 29);
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.player-wrapper input{
+    width: 350px;
+    height: 50px;
+    border: none;
+    border-radius: 5%;
+    text-align: center;
+    font-size: 20px;
+    font-family: $font;
+    box-shadow: 0 21px 15px rgba(226, 216, 216, 0.5);
+    margin-right: 5px;
+}
+
+.player-wrapper button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5%;
+    font-size: 20px;
+    font-family:$font;
+    background-color: white;
+    box-shadow: 0 21px 15px rgba(226, 216, 216, 0.5);
+    color: rgb(97, 95, 92);
+}
+
+.game-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.game-wrapper .game-title {
+    color: rgb(248, 246, 246);
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px rgba(219, 111, 111, 0.5);
+    text-align: center;
+}
+
+.game-wrapper h2{
+    letter-spacing: 2px;
+}
+
+.game-wrapper button {
+    width: 280px;
+    height: 60px;
+    border-radius: 5%;
+    border: none;
+    margin-top: 50px;
+    font-family: $font;
+    font-size: 30px;
+    color: $color-text;
+    text-shadow: 2px 2px rgba(219, 111, 111, 0.5);
+}
+
+.game-wrapper button:hover {
+    background-color:   $color-text;
+    color: white;
+}
+
+#pokeCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.img-container {
+    width: 240px;
+    height: 320px;
+    margin: 10px;
+    border: 12px solid $color-shadow;
+    border-radius: 5%;
+    text-align: center;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 25px 0 175px rgba(219, 111, 111, 0.5);
+}
+.img-container h2 {
+    padding-top: 30px;
+    font-size: 25px;
+    color: $color-text;
+    text-shadow: 1px 1px #e49e9e;
+}
+
+.img-container img {
+    margin-top: 10px;
+    width: 170px;
+    background-color: rgb(247, 244, 241);
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px 5px rgba(230, 212, 115, 0.5);
+}
+
+.hide {
+    display: none;
+}
+
+.choise-wrapper {   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.img-result {
+    width: 400px;
+    height:450px;
+    margin: 10px;
+    border: 12px solid $color-shadow;
+    border-radius: 5%;
+    text-align: center;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 25px 0 175px rgba(219, 111, 111, 0.5);
+}
+
+.img-result img {
+    margin-top: 10px;
+    width: 250px;
+    background-color: rgb(247, 244, 241);
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px 5px rgba(230, 212, 115, 0.5);
+}
+
+.img-result h2 {
+    font-size: 45px;
+    color: $color-text;
+    text-shadow: 1px 1px #e49e9e;
+}
+.img-result h3 {
+    margin-bottom: 60px;
+    font-size: 15px;
+    color: $color-text;
+    text-shadow: 1px 1px #e49e9e;
+}
+
+@media (max-width: 500px) {
+    .player-wrapper {
+        margin-top: 100px;
+    }
+    .game-wrapper .game-title {
+        font-size: 25px;
+        max-width: 300px;
+    }
+    .player-wrapper button {
+        margin-top: 20px;
+    }
+    .img-result {
+        width: 300px;
+        height:350px;
+    }
+    .img-result img {
+        margin-top: 10px;
+        width: 150px;
+    }
+}
+
